@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent_linear_layout_activity_detail"
+    tools:context="com.example.android.inventoryproject.DetailActivity">
+
+    <LinearLayout style="@style/child_linear_layout_activity_detail">
+
+        <TextView
+            style="@style/info_text_views_activity_detail"
+            android:text="@string/product_name" />
+
+        <EditText
+            android:id="@+id/edit_text_name"
+            style="@style/edit_texts_activity_detail"
+            android:layout_weight="2"
+            android:hint="@string/product_name_hint"
+            android:maxLength="20" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/child_linear_layout_activity_detail">
+
+        <TextView
+            style="@style/info_text_views_activity_detail"
+            android:text="@string/product_quantity" />
+
+        <Button
+            android:id="@+id/button_decrease_one"
+            style="@style/value_buttons_activity_detail"
+            android:text="@string/product_quantity_decrease_by_one" />
+
+        <TextView
+            android:id="@+id/text_view_quantity_final"
+            style="@style/value_text_view_activity_detail"
+            android:text="@string/product_quantity_init" />
+
+        <Button
+            android:id="@+id/button_increase_one"
+            style="@style/value_buttons_activity_detail"
+            android:text="@string/product_quantity_increase_by_one" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/child_linear_layout_activity_detail">
+
+        <TextView
+            style="@style/info_text_views_activity_detail"
+            android:text="@string/product_modifier_quantity_per_n" />
+
+        <Button
+            android:id="@+id/button_decrease_n"
+            style="@style/value_buttons_activity_detail"
+            android:text="@string/product_quantity_decrease_by_one" />
+
+        <EditText
+            android:id="@+id/edit_text_quantity"
+            style="@style/edit_texts_activity_detail"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/product_quantity_modifier_hint"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <Button
+            android:id="@+id/button_increase_n"
+            style="@style/value_buttons_activity_detail"
+            android:text="@string/product_quantity_increase_by_one" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/child_linear_layout_activity_detail">
+
+        <TextView
+            style="@style/info_text_views_activity_detail"
+            android:text="@string/product_price" />
+
+        <EditText
+            android:id="@+id/edit_text_price"
+            style="@style/edit_texts_activity_detail"
+            android:layout_marginRight="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/product_price_hint"
+            android:inputType="number"
+            android:maxLength="4" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/image_linear_layout_activity_detail">
+
+        <ImageView
+            android:id="@+id/detail_image"
+            style="@style/image_view_activity_detail" />
+
+        <Button
+            android:id="@+id/button_select_image"
+            style="@style/browse_image_button"
+            android:text="@string/product_browse_image_button" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_order_from_supplier"
+        style="@style/order_button"
+        android:text="@string/product_order_from_supplier" />
+
+</LinearLayout>

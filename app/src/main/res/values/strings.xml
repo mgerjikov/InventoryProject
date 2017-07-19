@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Inventory Project</string>
+
+    <string name="add_new_product">Add new product</string>
+    <string name="edit_existing_product">Edit product</string>
+
+    <!-- ________________________ Menu options labels ________________________ -->
+    <!-- Menu option label for new product -->
+    <string name="add_button">Add</string>
+    <!-- Menu option label for deletion an existing product -->
+    <string name="delete_button">Delete</string>
+
+    <!-- ________________________ DetailActivity field names ________________________ -->
+    <!-- DetailActivity field for product name -->
+    <string name="product_name">Product Name :</string>
+    <!-- DetailActivity field for product name hint -->
+    <string name="product_name_hint">e.g. Headphones</string>
+    <!-- DetailActivity field for product quantity -->
+    <string name="product_quantity">Quantity :</string>
+    <!-- DetailActivity field for product price -->
+    <string name="product_price">Price ($) :</string>
+    <!-- DetailActivity field for product price hint -->
+    <string name="product_price_hint">e.g. 10</string>
+    <!-- DetailActivity field for product quantity init value -->
+    <string name="product_quantity_init">0</string>
+    <!-- DetailActivity field for product quantity modifier hint -->
+    <string name="product_quantity_modifier_hint">e.g. 10</string>
+    <!-- DetailActivity field for product quantity button -->
+    <string name="product_quantity_increase_by_one">+</string>
+    <!-- DetailActivity field for product quantity button -->
+    <string name="product_quantity_decrease_by_one">-</string>
+    <!-- DetailActivity field for product order from supplier button -->
+    <string name="product_order_from_supplier">Order from supplier</string>
+    <!-- DetailActivity field for product quantity modifier -->
+    <string name="product_modifier_quantity_per_n">Modify per (n) :</string>
+    <!-- DetailActivity field for product image browsing button -->
+    <string name="product_browse_image_button">Browse Image</string>
+    <string name="product_supplier_email">supplier@email.com</string>
+
+    <!-- ________________________ Toast messages ________________________ -->
+    <!-- Toast message when nothing has been added or changed to existing product -->
+    <string name="no_changes_toast">Product not saved or updated!</string>
+    <!-- Toast message when new product was successfully inserted -->
+    <string name="successful_insert_toast">New product successfully added!</string>
+    <!-- Toast message when failed to insert new product -->
+    <string name="failed_insert_toast">Error with saving product!</string>
+    <!-- Toast message when successfully updated an existing product -->
+    <string name="successful_update_toast">Product successfully updated!</string>
+    <!-- Toast message when failed to update an existing product -->
+    <string name="failed_update_toast">Error with updating product!</string>
+    <!-- Toast message when successfully deleted an existing product -->
+    <string name="successful_delete_toast">Product successfully deleted!</string>
+    <!-- Toast message when failed to delete -->
+    <string name="failed_delete_toast">Could not delete product!</string>
+    <!-- WARNING toast message to notify user that quantity cannot be less than zero (stop pushing "-" button :) ) -->
+    <string name="invalid_product_quantity_toast">Quantity cannot be less than zero</string>
+    <!-- WARNING toast message to notify user that quantity modifier cannot be empty in order to work -->
+    <string name="invalid_product_quantity_modifier_toast">Modifier is empty. Insert quantity first. </string>
+    <!-- WARNING toast message to notify user that product name cannot be left empty -->
+    <string name="invalid_product_name_add_toast">Please input a valid name</string>
+    <!-- WARNING toast message to notify user that quantity cannot be left 0 in order to add new product -->
+    <string name="invalid_product_quantity_add_toast">Please input a valid quantity</string>
+    <!-- WARNING toast message to notify user that price field cannot be left empty -->
+    <string name="invalid_product_price_add_toast">Please input a valid price</string>
+    <!-- WARNING toast message to notify user that image have to be added in order to add new product -->
+    <string name="invalid_product_image_add_toast">Please input a valid image</string>
+    <!-- WARNING toast message to notify user that the product is out of stock -->
+    <string name="product_out_of_stock_toast">Product currently out of stock!</string>
+
+    <!-- ________________________ Alert dialog messages ________________________ -->
+    <!-- ALERT dialog message so the user do not accidentally delete product -->
+    <string name="prompt_delete_product">You are about to delete this product! Are you sure?</string>
+    <!-- ALERT dialog delete product option -->
+    <string name="prompt_delete">Delete</string>
+    <!-- ALERT dialog cancel deletion product option (also used when there are unsaved changes) -->
+    <string name="prompt_cancel">Cancel</string>
+    <!-- ALERT dialog option "Yes" used to make sure the user wants to leave when there are some unsaved changes to the product  -->
+    <string name="prompt_yes">Yes</string>
+    <!-- ALERT dialog message to notify user for unsaved changes -->
+    <string name="prompt_leave_without_save">You have unsaved changes. Are you sure you want to leave?</string>
+
+    <!-- ________________________ MainActivity field names ________________________ -->
+    <!-- MainActivity button for sale -->
+    <string name="button_sale">SALE</string>
+    <string name="label_quantity"> available in stock</string>
+    <string name="label_price"> USD </string>
+
+</resources>
